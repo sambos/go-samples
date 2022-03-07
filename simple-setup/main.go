@@ -1,19 +1,19 @@
 package main
 
 import (
-    "fmt"
-    "time"
-	"rsol.com/hello/articles"
+	"fmt"
+	"time"
+
+	"rsc.io/quote"
+	"rsol.com/simple-setup/articles"
+	"rsol.com/simple-setup/people"
 )
-
-import "rsc.io/quote"
-
 
 type Meetup struct {
 	location string
 	city     string
 	date     time.Time
-	people   []People
+	people   []people.People
 }
 
 func (m Meetup) MeetupPeople() {
@@ -27,25 +27,25 @@ func main() {
 	fmt.Println(quote.Go())
 	fmt.Print(quote.Glass())
 
-	p := Person{
-		name:  "shiju",
-		age:   35,
-		city:  "Kochi",
-		phone: "+900sd0sad",
+	p := people.Person{
+		Name:  "shiju",
+		Age:   35,
+		City:  "Kochi",
+		Phone: "+900sd0sad",
 	}
 
-    p1 := Person{
-		name:  "sam",
-		age:   20,
-		city:  "TX",
-		phone: "+000000000",
+    p1 := people.Person{
+		Name:  "sam",
+		Age:   20,
+		City:  "TX",
+		Phone: "+000000000",
 	}
 
 	m := Meetup{
         location: "",
         city: "",
         date: time.Now(),
-        people: []People {p,p1},
+        people: []people.People {p,p1},
     }
 
 
