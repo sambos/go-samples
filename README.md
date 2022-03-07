@@ -1,6 +1,8 @@
 
 ## Documentation
 * https://go.dev/doc/effective_go
+* [Go Playground] (https://go.dev/play/)
+* [Go web Examples] (https://gowebexamples.com/)
 
 ## GOPATH Issues ?
 [Using GoModules without worrying $GOPATH](https://medium.com/mindorks/create-projects-independent-of-gopath-using-go-modules-802260cdfb51)
